@@ -1,5 +1,7 @@
 import { Box, Flex, Link, HStack, Button, IconButton, useDisclosure, VStack, Text } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
+
 
 function Header() {
   const { open, onOpen, onClose } = useDisclosure();
@@ -52,16 +54,19 @@ function Header() {
             display={{ base: "flex", md: "none" }}
             onClick={open ? onClose : onOpen}
           >
-            <GiHamburgerMenu />
+            {!open ? <GiHamburgerMenu /> : <IoClose />}
           </IconButton>
+
 
           {open && (
             <Box
               pos="absolute"
               top="64px"
               left="0"
-              w="90%"
-              bg="transparent"
+              w="100%"
+              bg="black"
+              borderBottomWidth="1px"
+              borderBottomColor="gray.400"
               color="white"
               zIndex="dropdown"
               display={{ md: "none" }}
