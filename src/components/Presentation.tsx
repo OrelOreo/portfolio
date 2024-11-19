@@ -23,22 +23,22 @@ function Presentation() {
           </Text>
         </Box>
         <Flex
-          direction={{ base: "column", md: "row" }} 
+          direction={{ base: "column", md: "row" }}
           gap="4" 
           alignItems="center">
-          <Button as="div" variant="subtle" color="purple.400">
+          <Button as="div" variant="subtle" color="purple.400" width={{ base: "100%", md: "auto" }} fontSize={{ base: "sm", md: "md" }}>
               <FaGithub />
               <Link href="https://github.com/OrelOreo" target="_blank" _hover={{ textDecoration: 'none' }}>
                 <Text textStyle="lg">Github</Text>
               </Link>
           </Button>
-          <Button as="div" variant="subtle" color="purple.400">
+          <Button as="div" variant="subtle" color="purple.400" width={{ base: "100%", md: "auto" }} fontSize={{ base: "sm", md: "md" }}>
               <FaLinkedin />
               <Link href="https://www.linkedin.com/in/aurelien-oger/" target="_blank" _hover={{ textDecoration: 'none' }}>
                 <Text textStyle="lg">LinkedIn</Text>
               </Link>
           </Button>
-          <Button as="div" variant="subtle" color="purple.400">
+          <Button as="div" variant="subtle" color="purple.400" width={{ base: "100%", md: "auto" }} fontSize={{ base: "sm", md: "md" }}>
               <MdEmail />
               <Link href="mailto:aurelien94700@gmail.com" _hover={{ textDecoration: 'none' }}>
                 <Text textStyle="lg">Email</Text>
