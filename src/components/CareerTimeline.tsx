@@ -11,7 +11,7 @@ import {
 
 function CareerTimeline() {
     return (
-            <TimelineRoot size="xl" variant="outline">
+            <TimelineRoot id="parcours" size="xl" variant="outline">
                 <TimelineItem>
                     <TimelineContent flex="1" />
                     <TimelineConnector>

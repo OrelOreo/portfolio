@@ -1,6 +1,7 @@
 import { Box, Image, Text, Link, Flex, Heading } from "@chakra-ui/react";
 import { Tag } from "../components/ui/tag"
 import { SiNuxtdotjs, SiTypescript, SiDocker, SiElasticsearch, SiNodedotjs, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 
 
 
@@ -15,7 +16,7 @@ function ProjectCard() {
         url: 'https://www.data-asso.fr/',
         technos: [
           {
-            title: 'Nuxt.Js',
+            title: 'Nuxt.js',
             icon: <SiNuxtdotjs />,
             color: 'green',
           },
@@ -25,7 +26,7 @@ function ProjectCard() {
             color: 'cyan',
           },
           {
-            title: 'Node.Js',
+            title: 'Node.js',
             icon: <SiNodedotjs />,
             color: 'green',
           },
@@ -54,12 +55,12 @@ function ProjectCard() {
             color: 'cyan'
           },
           {
-            title: 'Nuxt.Js',
-            icon: <SiNuxtdotjs />,
-            color: 'green'
+            title: 'Next.js',
+            icon: <RiNextjsFill/>,
+            color: 'gray'
           },
           {
-            title: 'Node.Js',
+            title: 'Node.js',
             icon: <SiNodedotjs />,
             color: 'green',
           },
@@ -78,7 +79,7 @@ function ProjectCard() {
 ]
 
   return (
-    <Box width="100%">
+    <Box width="100%" id="projets">
       <Heading as="h3" size="xl">Tous travaux créatifs</Heading>
       <Text>Voici quelques projets sur lesquels j'ai travaillé.</Text>
       <Flex direction="column" justifyContent="center" align="center" gapY={8} my={8}>
