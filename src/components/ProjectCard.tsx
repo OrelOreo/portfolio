@@ -119,7 +119,7 @@ function ProjectCard() {
                 }
               </Flex>
               <hr className="chakra-divider" />
-              <Text fontSize="md" color="gray.600" mt={4}>
+              <Text fontSize="md" mt={4}>
                   {project.description}
               </Text>
             </Box>

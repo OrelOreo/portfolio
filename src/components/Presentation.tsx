@@ -14,7 +14,6 @@ function Presentation() {
             &nbsp; Basé en Île-de-France
         </Heading>
         <Box my={4}>
-          <Text>🚀 Actuellement spécialisé en <Text as="span" fontWeight="bold">Front-End.</Text></Text>
           <Text>
             ⚡ Développeur Full-Stack à &nbsp; 
             <Link variant="underline" color="purple.400" href="https://www.synaltic.fr" >
