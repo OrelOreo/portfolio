@@ -2,10 +2,11 @@ import { Box, Image, Text, Link, Flex, Heading } from "@chakra-ui/react";
 import { Tag } from "../components/ui/tag"
 import { SiNuxtdotjs, SiTypescript, SiDocker, SiElasticsearch, SiNodedotjs, SiMongodb, SiTailwindcss } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { forwardRef } from "react";
 
 
 
-function ProjectCard() {
+const ProjectCard = forwardRef<HTMLDivElement>((_, ref) => { {
 
   const projects = [
     {
@@ -79,7 +80,7 @@ function ProjectCard() {
 ]
 
   return (
-    <Box width="100%" id="projets">
+    <Box ref={ref} width="100%" id="Projects">
       <Heading as="h3" size="xl">Tous travaux créatifs</Heading>
       <Text>Voici quelques projets sur lesquels j'ai travaillé.</Text>
       <Flex direction="column" justifyContent="center" align="center" gapY={8} my={8}>
@@ -98,9 +99,8 @@ function ProjectCard() {
             <Image
               src={project.image}
               alt="Projet Image"
-              objectFit="fill"
+              objectFit="cover"
               w="100%"
-              // h="440px"
               h={{ base: "180px", md: "440px" }}
             />
 
@@ -130,6 +130,6 @@ function ProjectCard() {
       </Flex>
     </Box>
   );
-}
+}});
 
 export default ProjectCard;

@@ -1,4 +1,4 @@
-import { Card, Link } from "@chakra-ui/react"
+import { Box, Card, Link } from "@chakra-ui/react"
 import { CiCalendarDate } from "react-icons/ci";
 
 import {
@@ -8,9 +8,11 @@ import {
     TimelineRoot,
     TimelineTitle,
   } from "../components/ui/timeline"
+import { forwardRef } from "react";
 
-function CareerTimeline() {
+const CareerTimeline = forwardRef<HTMLDivElement> ((_, ref) => {
     return (
+      <Box ref={ref} id="Career">
             <TimelineRoot id="parcours" size="xl" variant="outline">
                 <TimelineItem>
                     <TimelineContent flex="1" />
@@ -56,8 +58,9 @@ function CareerTimeline() {
                       </Card.Root>
                     </TimelineContent>
                 </TimelineItem>
-    </TimelineRoot>
+          </TimelineRoot>
+    </Box>
     )
-}
+})
 
 export default CareerTimeline

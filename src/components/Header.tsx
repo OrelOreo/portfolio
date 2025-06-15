@@ -1,9 +1,14 @@
 import { Box, Flex, Link, HStack, Button, IconButton, useDisclosure, VStack, Text } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import { TScrollToSection } from "../App";
+
+type THeaderProps = {
+  scrollIntoView: (ref: TScrollToSection) => void;
+};
 
 
-function Header() {
+function Header({ scrollIntoView }: THeaderProps) {
   const { open, onOpen, onClose } = useDisclosure();
 
   return (
@@ -32,17 +37,17 @@ function Header() {
 
           <HStack as="div" spaceX={4} display={{ base: "none", md: "flex" }}>
             <Button as="div" variant="ghost">
-              <Link href="/" _hover={{ textDecoration: 'none' }} >
+              <Link onClick={() => scrollIntoView('Home')} _hover={{ textDecoration: 'none' }} >
                 <Text textStyle="lg">Accueil</Text>
               </Link>
             </Button>
             <Button as="div" variant="ghost">
-              <Link href="#projets" _hover={{ textDecoration: 'none' }}>
+              <Link onClick={() => scrollIntoView('Projects')}  _hover={{ textDecoration: 'none' }}>
                 <Text textStyle="lg">Projets</Text>
               </Link>
             </Button>
             <Button as="div" variant="ghost">
-              <Link href="#parcours" _hover={{ textDecoration: 'none' }}>
+              <Link onClick={() => scrollIntoView('Career')} _hover={{ textDecoration: 'none' }}>
                 <Text textStyle="lg">Parcours</Text>
               </Link>
             </Button>
@@ -74,17 +79,17 @@ function Header() {
             >
               <VStack spaceY={4} align="start" pl={2}>
                 <Button as="div" variant="ghost">
-                    <Link href="/" _hover={{ textDecoration: 'none' }}>
+                    <Link onClick={() => scrollIntoView('Home')} _hover={{ textDecoration: 'none' }}>
                         <Text textStyle="lg">Accueil</Text>
                     </Link>
                 </Button>
                 <Button onClick={onClose} as="div" variant="ghost">
-                    <Link href="#projets" _hover={{ textDecoration: 'none' }}>
+                    <Link onClick={() => scrollIntoView('Projects')} _hover={{ textDecoration: 'none' }}>
                         <Text textStyle="lg">Projets</Text>
                     </Link>
                 </Button>
                 <Button onClick={onClose} as="div" variant="ghost">
-                    <Link href="#parcours" _hover={{ textDecoration: 'none' }}>
+                    <Link onClick={() => scrollIntoView('Career')} _hover={{ textDecoration: 'none' }}>
                         <Text textStyle="lg">Parcours</Text>
                     </Link>
                 </Button>

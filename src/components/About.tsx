@@ -18,7 +18,7 @@ function About() {
           Actuellement développeur full-stack, je suis particulièrement passionné par la création de projets innovants avec du code et l'automatisation des tâches. Je me concentre actuellement sur le développement front-end.
         </Text>
         <Text as="p">
-          Quand je ne code pas, je passe mon temps à jouer à des jeux avec mes amis, à regarder des vidéos sur l'astronomie ✨ ou à jouer de la guitare ! 🎸
+          Quand je ne code pas, je passe mon temps à jouer à des jeux avec mes amis, à la salle de sport 🏋️ ou à jouer de la guitare ! 🎸
         </Text>
       </Box>
       <Image 
