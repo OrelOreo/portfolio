@@ -16,7 +16,7 @@ function Presentation() {
         <Box my={4}>
           <Text>
             ⚡ Développeur Full-Stack à &nbsp; 
-            <Link variant="underline" color="purple.400" href="https://www.synaltic.fr" >
+            <Link variant="underline" color="purple.400" href="https://www.synaltic.fr" target="_blank" >
              Synaltic
             </Link>
           </Text>
