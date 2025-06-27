@@ -7,12 +7,6 @@ function Contact() {
     <Box display="flex" justifyContent="center" alignItems="center" >
       <VStack spaceY={4} textAlign="center">
         <Heading as="h3" size="4xl" mb="4">Rester en contact</Heading>
-        <Text as="p" mb="4">
-            Je me spécialise actuellement dans le
-            <Text as="span" color="purple.400">
-                &nbsp; Développement Front-End
-            </Text>
-        </Text>
         <Text as="p">
             N'hésitez pas à me contacter.
         </Text>

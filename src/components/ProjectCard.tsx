@@ -1,6 +1,6 @@
 import { Box, Image, Text, Link, Flex, Heading } from "@chakra-ui/react";
 import { Tag } from "../components/ui/tag"
-import { SiNuxtdotjs, SiTypescript, SiDocker, SiElasticsearch, SiNodedotjs, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { SiNuxtdotjs, SiTypescript, SiDocker, SiElasticsearch, SiNodedotjs, SiMongodb, SiTailwindcss, SiPostgresql, SiAdonisjs } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { forwardRef } from "react";
 
@@ -9,6 +9,45 @@ import { forwardRef } from "react";
 const ProjectCard = forwardRef<HTMLDivElement>((_, ref) => { {
 
   const projects = [
+    {
+        title: 'Pass Sport',
+        description: 'Pass Sport est une aide financière de 70 € pour les jeunes de 14 à 30 ans, destinée à faciliter l’accès à la pratique sportive.',
+        image: 'passsport.png',
+        alt: 'pass sport site',
+        url: 'https://www.pass.sports.gouv.fr/',
+        technos: [
+          {
+            title: 'Nuxt.js',
+            icon: <SiNuxtdotjs />,
+            color: 'green',
+          },
+          {
+            title: 'Tailwind CSS',
+            icon: <SiTailwindcss />,
+            color: 'cyan',
+          },
+          {
+            title: 'Node.js',
+            icon: <SiNodedotjs />,
+            color: 'green',
+          },
+          {
+            title: 'Docker',
+            icon: <SiDocker />,
+            color: 'cyan'
+          },
+          {
+            title: 'PostgreSQL',
+            icon: <SiPostgresql />,
+            color: 'cyan'
+          },
+          {
+            title: 'AdonisJS',
+            icon: <SiAdonisjs />,
+            color: 'purple'
+          }
+        ]
+    },
     {
         title: 'Data-Asso',
         description: 'Data-Asso permet en quelques clics de découvrir la richesse et la diversité du monde associatif en France parmi plus de 3 millions d\'associations référencées.',
