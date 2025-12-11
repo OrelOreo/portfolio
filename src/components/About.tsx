@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Image, Link } from "@chakra-ui/react";
 
 function About() {
   return (
@@ -16,6 +16,9 @@ function About() {
         </Text>
         <Text as="p" mb="4">
           Actuellement développeur full-stack, je suis particulièrement passionné par la création de projets innovants avec du code et l'automatisation des tâches. Je me concentre actuellement sur le développement front-end.
+        </Text>
+        <Text as="p" mb="4">
+          En parallèle, j’apprends la cybersécurité, notamment à travers la plateforme <Link href="https://tryhackme.com/" target="_blank" variant="underline" color="purple.400">TryHackMe</Link>, pour élargir mes compétences et mieux comprendre les enjeux de sécurité.
         </Text>
         <Text as="p">
           Quand je ne code pas, je passe mon temps à jouer à des jeux avec mes amis, à la salle de sport 🏋️ ou à jouer de la guitare ! 🎸
