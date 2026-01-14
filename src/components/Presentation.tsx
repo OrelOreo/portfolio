@@ -9,7 +9,7 @@ function Presentation() {
         <Heading as="h1" size="6xl">Aurélien Oger.</Heading>
         <Heading as="h2" size="4xl" color="gray.500">
           <Text as="span" color="white">
-            Développeur web.
+            Développeur Javascript / Typescript.
           </Text>
             &nbsp; Basé en Île-de-France
         </Heading>

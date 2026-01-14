@@ -1,6 +1,6 @@
 import { Box, Image, Text, Link, Flex, Heading } from "@chakra-ui/react";
 import { Tag } from "../components/ui/tag"
-import { SiNuxtdotjs, SiTypescript, SiDocker, SiElasticsearch, SiNodedotjs, SiMongodb, SiTailwindcss, SiPostgresql, SiAdonisjs } from "react-icons/si";
+import { SiNuxtdotjs, SiPrisma,SiShadcnui, SiTypescript, SiDocker, SiElasticsearch, SiNodedotjs, SiMongodb, SiTailwindcss, SiPostgresql, SiAdonisjs } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { forwardRef } from "react";
 
@@ -9,6 +9,45 @@ import { forwardRef } from "react";
 const ProjectCard = forwardRef<HTMLDivElement>((_, ref) => { {
 
   const projects = [
+    {
+        title: 'I-Need-Medic',
+        description: 'I-Need-Medic est une application qui met en relation des patients et des professionnels de santé pour des consultations.',
+        image: 'ineedmedic.png',
+        alt: 'ineedmedic site',
+        url: 'https://i-need-medic.vercel.app/',
+        technos: [
+          {
+            title: 'TypeScript',
+            icon: <SiTypescript />,
+            color: 'cyan'
+          },
+          {
+            title: 'Next.js',
+            icon: <RiNextjsFill/>,
+            color: 'gray'
+          },
+         {
+            title: 'PostgreSQL',
+            icon: <SiPostgresql />,
+            color: 'cyan'
+          },
+           {
+            title: 'Tailwind CSS',
+            icon: <SiTailwindcss />,
+            color: 'cyan',
+          },
+           {
+            title: 'Prisma',
+            icon: <SiPrisma />,
+            color: 'purple',
+          },
+            {
+            title: 'shadcn/ui',
+            icon: <SiShadcnui />,
+            color: 'gray',
+          },
+        ]
+    },
     {
         title: 'Pass Sport',
         description: 'Pass Sport est une aide financière de 70 € pour les jeunes de 14 à 30 ans, destinée à faciliter l’accès à la pratique sportive.',
@@ -115,7 +154,7 @@ const ProjectCard = forwardRef<HTMLDivElement>((_, ref) => { {
             color: 'cyan'
           }
         ]
-    }
+    },
 ]
 
   return (
