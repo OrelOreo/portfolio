@@ -36,21 +36,45 @@ function Header({ scrollIntoView }: THeaderProps) {
           </Button>
 
           <HStack as="div" spaceX={4} display={{ base: "none", md: "flex" }}>
-            <Button as="div" variant="ghost">
-              <Link onClick={() => scrollIntoView('Home')} _hover={{ textDecoration: 'none' }} >
-                <Text textStyle="lg">Accueil</Text>
-              </Link>
-            </Button>
-            <Button as="div" variant="ghost">
-              <Link onClick={() => scrollIntoView('Projects')}  _hover={{ textDecoration: 'none' }}>
-                <Text textStyle="lg">Projets</Text>
-              </Link>
-            </Button>
-            <Button as="div" variant="ghost">
-              <Link onClick={() => scrollIntoView('Career')} _hover={{ textDecoration: 'none' }}>
-                <Text textStyle="lg">Parcours</Text>
-              </Link>
-            </Button>
+            <Link
+              href="#home"
+              onClick={(e) => { e.preventDefault(); scrollIntoView('Home'); onClose(); }}
+              _hover={{ textDecoration: 'none', bg: 'gray.700' }}
+              px={4}
+              py={2}
+              borderRadius="md"
+              display="inline-block"
+              tabIndex={0}
+              role="button"
+            >
+              <Text textStyle="lg">Accueil</Text>
+            </Link>
+            <Link
+              href="#projects"
+              onClick={(e) => { e.preventDefault(); scrollIntoView('Projects'); onClose(); }}
+              _hover={{ textDecoration: 'none', bg: 'gray.700' }}
+              px={4}
+              py={2}
+              borderRadius="md"
+              display="inline-block"
+              tabIndex={0}
+              role="button"
+            >
+              <Text textStyle="lg">Projets</Text>
+            </Link>
+            <Link
+              href="#career"
+              onClick={(e) => { e.preventDefault(); scrollIntoView('Career'); onClose(); }}
+              _hover={{ textDecoration: 'none', bg: 'gray.700' }}
+              px={4}
+              py={2}
+              borderRadius="md"
+              display="inline-block"
+              tabIndex={0}
+              role="button"
+            >
+              <Text textStyle="lg">Parcours</Text>
+            </Link>
           </HStack>
 
           <IconButton
@@ -78,21 +102,45 @@ function Header({ scrollIntoView }: THeaderProps) {
               p={4}
             >
               <VStack spaceY={4} align="start" pl={2}>
-                <Button as="div" variant="ghost">
-                    <Link onClick={() => scrollIntoView('Home')} _hover={{ textDecoration: 'none' }}>
-                        <Text textStyle="lg">Accueil</Text>
-                    </Link>
-                </Button>
-                <Button onClick={onClose} as="div" variant="ghost">
-                    <Link onClick={() => scrollIntoView('Projects')} _hover={{ textDecoration: 'none' }}>
-                        <Text textStyle="lg">Projets</Text>
-                    </Link>
-                </Button>
-                <Button onClick={onClose} as="div" variant="ghost">
-                    <Link onClick={() => scrollIntoView('Career')} _hover={{ textDecoration: 'none' }}>
-                        <Text textStyle="lg">Parcours</Text>
-                    </Link>
-                </Button>
+                <Link
+                  href="#home"
+                  onClick={(e) => { e.preventDefault(); scrollIntoView('Home'); onClose(); }}
+                  _hover={{ textDecoration: 'none', bg: 'gray.700' }}
+                  px={4}
+                  py={2}
+                  borderRadius="md"
+                  display="inline-block"
+                  tabIndex={0}
+                  role="button"
+                >
+                  <Text textStyle="lg">Accueil</Text>
+                </Link>
+                <Link
+                  href="#projects"
+                  onClick={(e) => { e.preventDefault(); scrollIntoView('Projects'); onClose(); }}
+                  _hover={{ textDecoration: 'none', bg: 'gray.700' }}
+                  px={4}
+                  py={2}
+                  borderRadius="md"
+                  display="inline-block"
+                  tabIndex={0}
+                  role="button"
+                >
+                  <Text textStyle="lg">Projets</Text>
+                </Link>
+                <Link
+                  href="#career"
+                  onClick={(e) => { e.preventDefault(); scrollIntoView('Career'); onClose(); }}
+                  _hover={{ textDecoration: 'none', bg: 'gray.700' }}
+                  px={4}
+                  py={2}
+                  borderRadius="md"
+                  display="inline-block"
+                  tabIndex={0}
+                  role="button"
+                >
+                  <Text textStyle="lg">Parcours</Text>
+                </Link>
               </VStack>
             </Box>
           )}
