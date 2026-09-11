@@ -62,20 +62,6 @@ const CareerTimeline = forwardRef<HTMLDivElement> ((_, ref) => {
                     </Card.Root>
                     </TimelineContent>
               </TimelineItem>
-              <TimelineItem>
-                    <TimelineContent flex="1" alignItems="flex-end">
-                    <TimelineTitle>Formation Cybersecurity Essentials (Nov 2025 - Dec 2025)</TimelineTitle>
-                    <Card.Root size="sm">
-                      <Card.Body textStyle="sm" lineHeight="tall">
-                      <p>Cette formation m’a apporté les bases de la cybersécurité : compréhension des menaces, bonnes pratiques de sécurité et initiation aux outils essentiels du domaine. Un premier socle qui complète ma pratique sur <Link href="https://tryhackme.com/" target="_blank" variant="underline" color="purple.400">TryHackMe</Link> et renforce ma vision globale de la sécurité informatique.</p>
-                    </Card.Body>
-                  </Card.Root>
-                    </TimelineContent>
-                    <TimelineConnector>
-                        <CiCalendarDate />
-                    </TimelineConnector>
-                    <TimelineContent flex="1" />
-            </TimelineItem>
           </TimelineRoot>
     </Box>
     )
