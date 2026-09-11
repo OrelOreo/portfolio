@@ -54,7 +54,7 @@ const CareerTimeline = forwardRef<HTMLDivElement> ((_, ref) => {
                         <CiCalendarDate />
                     </TimelineConnector>
                     <TimelineContent flex="1">
-                    <TimelineTitle>Développeur Web Full-Stack (2024 - {currentYear})</TimelineTitle>
+                    <TimelineTitle>Développeur Web Full-Stack (2023 - {currentYear})</TimelineTitle>
                     <Card.Root size="sm">
                       <Card.Body textStyle="sm" lineHeight="tall">
                         <p>Durant cette période j'ai principalement travaillé sur une deuxième version de la partie Front-End du projet <Link href="https://lecompteasso.associations.gouv.fr/" target="_blank" color="purple.400" variant="underline">Le Compte Asso</Link></p>
