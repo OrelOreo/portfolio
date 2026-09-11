@@ -24,7 +24,7 @@ const CareerTimeline = forwardRef<HTMLDivElement> ((_, ref) => {
                         <CiCalendarDate />
                     </TimelineConnector>
                     <TimelineContent flex="1">
-                      <TimelineTitle>Prep'Apprentissage Openclassrooms (2022 - 2023)</TimelineTitle>
+                      <TimelineTitle>Prep'Apprentissage Openclassrooms (Janv 2022 - Mars 2022)</TimelineTitle>
                       <Card.Root size="sm">
                         <Card.Body textStyle="sm" lineHeight="tall">
                           <p>Initiation au métier de développeur web en réalisant un projet avec HTML / CSS</p>
@@ -35,7 +35,7 @@ const CareerTimeline = forwardRef<HTMLDivElement> ((_, ref) => {
                
               <TimelineItem>
                     <TimelineContent flex="1" alignItems="flex-end">
-                    <TimelineTitle>Alternance Développeur Web (2023 - 2024)</TimelineTitle>
+                    <TimelineTitle>Alternance Développeur Web (sept 2022 - sept 2023)</TimelineTitle>
                     <Card.Root size="sm">
                       <Card.Body textStyle="sm" lineHeight="tall">
                       <p>Lors de mon alternance en tant que développeur web, j'ai principalement travaillé sur une deuxième version de la Front-End de <Link href="https://www.data-asso.fr/" target="_blank" color="purple.400" variant="underline">Data-Asso</Link>. J'ai contribué à la conception, à la programmation JavaScript avec le framework Nuxt.js</p>
